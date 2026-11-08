@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://escuna-sao-domingos-angra.vercel.app/sitemap.xml

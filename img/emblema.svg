@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="São Domingos Turismo">
+  <defs>
+    <path id="arc" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12506a"/><stop offset="1" stop-color="#061a26"/></linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#sea)"/>
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#e0a945" stroke-width="1.6"/>
+  <circle cx="60" cy="60" r="36" fill="none" stroke="#e0a945" stroke-width="1" stroke-dasharray="2 3"/>
+  <text font-family="Georgia, serif" font-size="9.4" font-weight="700" letter-spacing="2.4" fill="#f6f0e6"><textPath href="#arc" startOffset="2%">SÃO DOMINGOS · ILHA GRANDE · ANGRA ·</textPath></text>
+  <g fill="#f6f0e6">
+    <path d="M48 36v34h-2V36zM66 32v38h-2V32z"/>
+    <path d="M50 38l12 30H50zM68 34l12 34H68z" opacity=".95"/>
+    <path d="M40 72h44l-6 9H44z" fill="#e0a945"/>
+    <path d="M84 72l8-6" stroke="#f6f0e6" stroke-width="1.6"/>
+  </g>
+  <path d="M36 86c4 0 4-2.4 8-2.4s4 2.4 8 2.4 4-2.4 8-2.4 4 2.4 8 2.4 4-2.4 8-2.4 4 2.4 8 2.4" fill="none" stroke="#38c3b4" stroke-width="2" stroke-linecap="round"/>
+</svg>
