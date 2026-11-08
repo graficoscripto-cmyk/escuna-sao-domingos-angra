@@ -250,14 +250,14 @@ input[type=date]{color-scheme:dark}
 
 /* MAPA */
 .map-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px;align-items:stretch}
-#mapa{min-height:520px;border-radius:var(--r);overflow:hidden;border:1px solid var(--sand-2);z-index:1}
+#mapa{height:600px;align-self:center;border-radius:var(--r);overflow:hidden;border:1px solid var(--sand-2);z-index:1}
 .pts{list-style:none;display:grid;gap:4px;margin:24px 0}
 .pts button{width:100%;text-align:left;display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;border:0;background:transparent;font:inherit;cursor:pointer;color:var(--ink)}
 .pts button:hover,.pts button.on{background:#fff}
 .pts i{width:12px;height:12px;border-radius:50%;flex:none}
 .pts small{display:block;color:var(--mute);font-size:.8rem}
 .leaflet-popup-content{font-family:var(--body);font-size:.9rem}
-@media(max-width:900px){.map-grid{grid-template-columns:1fr}#mapa{min-height:380px}}
+@media(max-width:900px){.map-grid{grid-template-columns:1fr}#mapa{height:400px}}
 
 /* PROVA */
 .proof{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:30px;padding:40px clamp(24px,4vw,56px);border-radius:24px;background:#fff;border:1px solid var(--sand-2)}
@@ -674,7 +674,7 @@ if (window.L) {
       ul.appendChild(li);
     }
   });
-  map.fitBounds(L.featureGroup(mk).getBounds().pad(0.08));
+  const fit=()=>{map.invalidateSize();map.fitBounds(L.featureGroup(mk).getBounds().pad(0.08));}; fit(); addEventListener('load',fit); new ResizeObserver(()=>map.invalidateSize()).observe(document.getElementById('mapa'));
 }
 
 /* MOTION */
